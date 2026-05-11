@@ -1,0 +1,130 @@
+#nav{
+    /* background-color: lightblue; */
+    display: grid;
+    padding:10px;
+    align-items: center;
+    grid-template-columns: 1fr auto 1fr;
+    color:white;
+    
+}
+
+.logo {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: system-ui, sans-serif;
+    /* margin: 10px; */
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+.button-wrapper{
+    display: flex;
+    justify-content: flex-end;  
+}
+
+.button-wrapper button {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+body{
+    background-color: black;
+    margin:0;
+    padding: 0;
+
+}
+
+h1{
+    color:white;
+    text-align: center;
+    padding:  0px 25px;
+    margin:0;
+    font-size: 95px;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.filters{
+    color: white;
+    display: flex;
+    gap: 13px;
+    margin: 20px 0 30px 0;
+    justify-content: center;
+    font-size: 22px;
+}
+.filters button {
+    background-color: #1a1a1a;
+    color: white;
+    border: 1px solid #333;
+    padding: 10px 24px;
+    border-radius: 999px; /* pill shape */
+    font-size: 16px;
+    cursor: pointer;
+    font-family: system-ui, sans-serif;
+}
+
+.filters button.active {
+    background-color: #e8500a; 
+    border: none;
+}
+
+.cards{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 14px 20px;
+}
+
+
+.box {
+    background-color: #181818;
+    border-radius: 12px;
+    overflow: hidden;    /* keeps image inside rounded corners */
+    color: white;
+    font-family: system-ui, sans-serif;
+}
+
+.box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* fills the space without stretching */
+}
+
+.box .tag {
+    display: inline-block;
+    background-color: #8B4513;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    margin: 16px 0 0 16px;
+}
+
+.box h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 16px 0 16px;
+    margin: 0;
+}
+
+.box p {
+    color: #888;
+    font-size: 14px;
+    padding: 8px 16px 20px 16px;
+    margin: 0;
+}
